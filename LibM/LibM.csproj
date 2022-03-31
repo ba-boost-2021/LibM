@@ -9,6 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="appsetting.Development.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsetting.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.3">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -18,6 +28,7 @@
   <ItemGroup>
     <ProjectReference Include="..\LibM.Data.Access\LibM.Data.Access.csproj" />
     <ProjectReference Include="..\LibM.Data.Entities\LibM.Data.Entities.csproj" />
+    <ProjectReference Include="..\LibM.Services\LibM.Services.csproj" />
   </ItemGroup>
 
 </Project>
