@@ -17,3 +17,19 @@ namespace LibM.Data.Entities
         public DateTime ModifiedAt { get; set; }
     }
 }
+
+
+
+/*
+ Cutomer
+    Transactions (StudentId(Guid, FK), BookId(Guid, FK), BorrowingDate(DateTime), ReturnDate(DateTime), )
+    Students (FirstName, LastName, Gender(Enum), BirthDate(DateTime), Grade(String (Sınıfı temsil ediyor)))
+Management
+    Employees
+
+Definition
+    Books (Name, AuthorId(Guid, FK), TypeId(Guid, FK), PageCount, Available(bool))
+    Authors (FirstName, LastName)
+    Types (Name)
+ 
+ */
