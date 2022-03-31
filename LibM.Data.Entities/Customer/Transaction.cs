@@ -13,14 +13,14 @@ namespace LibM.Data.Entities.Customer
     public class Transaction : EntityBase
     {
         [Required]
-        public Guid StudentID { get; set; }
+        public Guid StudentId { get; set; }
 
 
         [Required]
-        public Guid BookID { get; set; }
+        public Guid BookId { get; set; }
 
 
-        [ForeignKey(nameof(BookID))]
+        [ForeignKey(nameof(BookId))]
         public Book Book { get; set; }
 
         [Required]
@@ -29,7 +29,7 @@ namespace LibM.Data.Entities.Customer
         [Required]
         public DateTime ReturnDate { get; set; }
         
-        [ForeignKey(nameof(StudentID))]
+        [ForeignKey(nameof(StudentId))]
         public Student Student { get; set; }
     }
 }

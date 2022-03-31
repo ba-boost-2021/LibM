@@ -16,9 +16,7 @@ namespace LibM.Data.Entities.Definition
         public string Name { get; set; }
 
         [Required]
-        public Guid AuthorID { get; set; }
-
-
+        public Guid AuthorId { get; set; }
 
         [Required]
         [MaxLength(10000)]
@@ -27,13 +25,12 @@ namespace LibM.Data.Entities.Definition
         public bool Available { get; set; }
 
         [Required]
-        public Guid TypeID { get; set; }
+        public Guid TypeId { get; set; }
 
-
-        [ForeignKey(nameof(TypeID))]
+        [ForeignKey(nameof(TypeId))]
         public Type Type { get; set; }
 
-        [ForeignKey(nameof(AuthorID))]
+        [ForeignKey(nameof(AuthorId))]
         public Author Author { get; set; }
     }
 }
