@@ -4,6 +4,7 @@ using LibM.Data.Access;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LibM.Data.Access.Migrations
 {
     [DbContext(typeof(LibMDbContext))]
-    partial class LibMDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220331180246_AddedEntities")]
+    partial class AddedEntities
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -66,7 +68,7 @@ namespace LibM.Data.Access.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("BookId")
+                    b.Property<Guid>("BookID")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("BorrowingData")
@@ -81,14 +83,14 @@ namespace LibM.Data.Access.Migrations
                     b.Property<DateTime>("ReturnDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("StudentId")
+                    b.Property<Guid>("StudentID")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BookId");
+                    b.HasIndex("BookID");
 
-                    b.HasIndex("StudentId");
+                    b.HasIndex("StudentID");
 
                     b.ToTable("Transactions", "Customer");
                 });
@@ -126,7 +128,7 @@ namespace LibM.Data.Access.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("AuthorId")
+                    b.Property<Guid>("AuthorID")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<bool>("Available")
@@ -147,14 +149,14 @@ namespace LibM.Data.Access.Migrations
                         .HasMaxLength(10000)
                         .HasColumnType("int");
 
-                    b.Property<Guid>("TypeId")
+                    b.Property<Guid>("TypeID")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AuthorId");
+                    b.HasIndex("AuthorID");
 
-                    b.HasIndex("TypeId");
+                    b.HasIndex("TypeID");
 
                     b.ToTable("Books", "Definition");
                 });
@@ -216,13 +218,13 @@ namespace LibM.Data.Access.Migrations
                 {
                     b.HasOne("LibM.Data.Entities.Definition.Book", "Book")
                         .WithMany()
-                        .HasForeignKey("BookId")
+                        .HasForeignKey("BookID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("LibM.Data.Entities.Customer.Student", "Student")
                         .WithMany()
-                        .HasForeignKey("StudentId")
+                        .HasForeignKey("StudentID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -235,13 +237,13 @@ namespace LibM.Data.Access.Migrations
                 {
                     b.HasOne("LibM.Data.Entities.Definition.Author", "Author")
                         .WithMany()
-                        .HasForeignKey("AuthorId")
+                        .HasForeignKey("AuthorID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("LibM.Data.Entities.Definition.Type", "Type")
                         .WithMany()
-                        .HasForeignKey("TypeId")
+                        .HasForeignKey("TypeID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
