@@ -20,10 +20,9 @@ namespace LibM
 
         private void booksToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
             var frmBook = new Books.frmBook();
             frmBook.ShowDialog();
-            this.Show();
             
         }
     }
