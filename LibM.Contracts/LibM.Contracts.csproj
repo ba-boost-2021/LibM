@@ -5,4 +5,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LibM.Data.Entities\LibM.Data.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
