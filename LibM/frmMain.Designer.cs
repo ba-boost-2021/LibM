@@ -171,10 +171,33 @@
             // 
             // employeeManagementToolStripMenuItem
             // 
+            this.typesToolStripMenuItem.Name = "typesToolStripMenuItem";
+            this.typesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.typesToolStripMenuItem.Text = "Types";
+            this.typesToolStripMenuItem.Click += new System.EventHandler(this.typesToolStripMenuItem_Click);
+            // 
+            // booksToolStripMenuItem
+            // 
+            this.booksToolStripMenuItem.Name = "booksToolStripMenuItem";
+            this.booksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.booksToolStripMenuItem.Text = "Books";
             this.employeeManagementToolStripMenuItem.Name = "employeeManagementToolStripMenuItem";
             this.employeeManagementToolStripMenuItem.Size = new System.Drawing.Size(145, 20);
             this.employeeManagementToolStripMenuItem.Text = "Employee Management";
             this.employeeManagementToolStripMenuItem.Click += new System.EventHandler(this.employeeManagementToolStripMenuItem_Click);
+            // 
+            // studentManagementToolStripMenuItem
+            // 
+            this.studentManagementToolStripMenuItem.Name = "studentManagementToolStripMenuItem";
+            this.studentManagementToolStripMenuItem.Size = new System.Drawing.Size(134, 20);
+            this.studentManagementToolStripMenuItem.Text = "Student Management";
+            this.studentManagementToolStripMenuItem.Click += new System.EventHandler(this.studentManagementToolStripMenuItem_Click);
+            // 
+            // employeeManagementToolStripMenuItem
+            // 
+            this.employeeManagementToolStripMenuItem.Name = "employeeManagementToolStripMenuItem";
+            this.employeeManagementToolStripMenuItem.Size = new System.Drawing.Size(145, 20);
+            this.employeeManagementToolStripMenuItem.Text = "Employee Management";
             // 
             // frmMain
             // 

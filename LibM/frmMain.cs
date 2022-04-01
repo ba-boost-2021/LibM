@@ -18,6 +18,19 @@ namespace LibM
             dgvTransactions.DataSource = new BindingList<TransactionViewDto>(transactionRepository.GetAllTransaction());
         }
 
+        private void studentManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmStudent = new frmStudents();
+            frmStudent.ShowDialog();
+
+        }
+
+        private void typesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmType = new frmTypes();
+            frmType.ShowDialog();
+        }
+
         private void authorsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var frmAuthor = new frmAuthor();
