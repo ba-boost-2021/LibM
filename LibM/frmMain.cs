@@ -17,5 +17,14 @@ namespace LibM
         {
             dgvTransactions.DataSource = new BindingList<TransactionViewDto>(transactionRepository.GetAllTransaction());
         }
+
+        private void booksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var frmBook = new Books.frmBook();
+            frmBook.ShowDialog();
+            this.Show();
+            
+        }
     }
 }
