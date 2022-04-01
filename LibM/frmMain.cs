@@ -20,12 +20,12 @@ namespace LibM
 
         private void authorsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frmAuthor = new frmAuthor();
+            var frmAuthor = new frmAuthor();
             frmAuthor.ShowDialog();
         }
         private void employeeManagementToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frmEmployeesManagement = new frmEmployeeManagement();
+            var frmEmployeesManagement = new frmEmployeeManagement();
             frmEmployeesManagement.ShowDialog();
         }
 
