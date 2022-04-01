@@ -12,13 +12,13 @@ namespace LibM.Services.Repositories
         {
             context = context = ContextManager.GetDbContext();
         }
+
         public List<TypesViewDto> GetAllTypes()
         {
-            var types = context.Types.Select(t => new TypesViewDto
+            return context.Types.Select(t => new TypesViewDto
             {
                 Name = t.Name
             }).ToList();
-            return types;
         }
     }
 }

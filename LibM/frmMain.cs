@@ -7,6 +7,7 @@ namespace LibM
     public partial class frmMain : Form
     {
         private readonly TransactionRepository transactionRepository;
+
         public frmMain()
         {
             InitializeComponent();
@@ -22,7 +23,6 @@ namespace LibM
         {
             var frmStudent = new frmStudents();
             frmStudent.ShowDialog();
-
         }
 
         private void typesToolStripMenuItem_Click(object sender, EventArgs e)
