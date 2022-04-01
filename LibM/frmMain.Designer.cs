@@ -65,6 +65,7 @@
             this.dgvTransactions.RowTemplate.Height = 25;
             this.dgvTransactions.Size = new System.Drawing.Size(989, 472);
             this.dgvTransactions.TabIndex = 0;
+            
             // 
             // StudentName
             // 
@@ -133,19 +134,20 @@
             // authorsToolStripMenuItem
             // 
             this.authorsToolStripMenuItem.Name = "authorsToolStripMenuItem";
-            this.authorsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.authorsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.authorsToolStripMenuItem.Text = "Authors";
+            this.authorsToolStripMenuItem.Click += new System.EventHandler(this.authorsToolStripMenuItem_Click);
             // 
             // typesToolStripMenuItem
             // 
             this.typesToolStripMenuItem.Name = "typesToolStripMenuItem";
-            this.typesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.typesToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.typesToolStripMenuItem.Text = "Types";
             // 
             // booksToolStripMenuItem
             // 
             this.booksToolStripMenuItem.Name = "booksToolStripMenuItem";
-            this.booksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.booksToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.booksToolStripMenuItem.Text = "Books";
             this.booksToolStripMenuItem.Click += new System.EventHandler(this.booksToolStripMenuItem_Click);
             // 
@@ -161,6 +163,19 @@
             this.employeeManagementToolStripMenuItem.Size = new System.Drawing.Size(145, 20);
             this.employeeManagementToolStripMenuItem.Text = "Employee Management";
             // 
+            // studentManagementToolStripMenuItem
+            // 
+            this.studentManagementToolStripMenuItem.Name = "studentManagementToolStripMenuItem";
+            this.studentManagementToolStripMenuItem.Size = new System.Drawing.Size(134, 20);
+            this.studentManagementToolStripMenuItem.Text = "Student Management";
+            // 
+            // employeeManagementToolStripMenuItem
+            // 
+            this.employeeManagementToolStripMenuItem.Name = "employeeManagementToolStripMenuItem";
+            this.employeeManagementToolStripMenuItem.Size = new System.Drawing.Size(145, 20);
+            this.employeeManagementToolStripMenuItem.Text = "Employee Management";
+            this.employeeManagementToolStripMenuItem.Click += new System.EventHandler(this.employeeManagementToolStripMenuItem_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -168,6 +183,7 @@
             this.ClientSize = new System.Drawing.Size(1013, 545);
             this.Controls.Add(this.dgvTransactions);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
