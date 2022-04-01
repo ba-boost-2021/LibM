@@ -15,8 +15,10 @@ INSERT INTO LibMDb.Customer.Students
 VALUES('0F8BFE0A-E194-4A6B-BFB4-DBE4C306442F', 'İsmail', 'Kara', 2, GETDATE(), '11-A', GETDATE(), GETDATE());
 
 INSERT INTO LibMDb.Customer.Transactions
-(Id, StudentId, BookId, BorrowingData, ReturnDate, CreatedAt, ModifiedAt)
+(Id, StudentId, BookId, BorrowingDate, ReturnDate, CreatedAt, ModifiedAt)
 VALUES('94B23F16-CE4A-4A68-8032-6B847DAD9EB6', '0F8BFE0A-E194-4A6B-BFB4-DBE4C306442F', 'F3AD5326-5AE6-4166-907B-D26D3B250947', GETDATE(), GETDATE(), GETDATE(), GETDATE());
 
-
+INSERT INTO LibMDb.Management.Employees
+(Id, FirstName, LastName, Phone, CreatedAt, ModifiedAt)
+VALUES('F0AD9565-903E-4957-9E6B-3FAB3FDBD3D2', 'Kadir Osman', 'Üst', '0555-555-55-55', GETDATE(), GETDATE());
 
