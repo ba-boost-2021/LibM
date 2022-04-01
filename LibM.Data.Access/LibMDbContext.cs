@@ -17,5 +17,12 @@ namespace LibM.Data.Access
         public DbSet<Book> Books { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Transaction>()
+                .Property(t => t.EmployeeId)
+                .HasDefaultValue(new Guid("F0AD9565-903E-4957-9E6B-3FAB3FDBD3D2"));
+        }
     }
 }

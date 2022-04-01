@@ -1,4 +1,5 @@
 ﻿using LibM.Data.Entities.Definition;
+using LibM.Data.Entities.Management;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -15,21 +16,25 @@ namespace LibM.Data.Entities.Customer
         [Required]
         public Guid StudentId { get; set; }
 
-
         [Required]
         public Guid BookId { get; set; }
 
-
-        [ForeignKey(nameof(BookId))]
-        public Book Book { get; set; }
+        [Required]
+        public Guid EmployeeId { get; set; }
 
         [Required]
-        public DateTime BorrowingData { get; set; }
+        public DateTime BorrowingDate { get; set; }
 
         [Required]
         public DateTime ReturnDate { get; set; }
         
         [ForeignKey(nameof(StudentId))]
         public Student Student { get; set; }
+
+        [ForeignKey(nameof(EmployeeId))]
+        public Employee Employee { get; set; }
+
+        [ForeignKey(nameof(BookId))]
+        public Book Book { get; set; }
     }
 }

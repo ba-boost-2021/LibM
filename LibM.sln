@@ -11,6 +11,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibM.Data.Access", "LibM.Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibM.Data.Entities", "LibM.Data.Entities\LibM.Data.Entities.csproj", "{3F09676C-3B96-4774-928F-499DCD818771}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{2F2FEC79-D748-4009-94DB-B786EBB63A7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibM.Services", "LibM.Services\LibM.Services.csproj", "{576196A9-C40C-4573-B1CE-7B02FCF10E93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commons", "Commons", "{067DAF33-7510-46CD-AE8D-0522C30296AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibM.Contracts", "LibM.Contracts\LibM.Contracts.csproj", "{804DC374-2904-4DA9-AF62-50369AF4D561}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Help", "Help", "{A6060046-3EBE-489C-ACAC-9C9334959401}"
+	ProjectSection(SolutionItems) = preProject
+		Migration.txt = Migration.txt
+		Seed.sql = Seed.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +43,14 @@ Global
 		{3F09676C-3B96-4774-928F-499DCD818771}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F09676C-3B96-4774-928F-499DCD818771}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F09676C-3B96-4774-928F-499DCD818771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{576196A9-C40C-4573-B1CE-7B02FCF10E93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{576196A9-C40C-4573-B1CE-7B02FCF10E93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{576196A9-C40C-4573-B1CE-7B02FCF10E93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{576196A9-C40C-4573-B1CE-7B02FCF10E93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{804DC374-2904-4DA9-AF62-50369AF4D561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{804DC374-2904-4DA9-AF62-50369AF4D561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{804DC374-2904-4DA9-AF62-50369AF4D561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{804DC374-2904-4DA9-AF62-50369AF4D561}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +58,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{AB1DF2A7-4970-4D30-AFF0-A2C56220DB57} = {C829BC2B-7638-47C0-96A1-E08B07263B1B}
 		{3F09676C-3B96-4774-928F-499DCD818771} = {C829BC2B-7638-47C0-96A1-E08B07263B1B}
+		{576196A9-C40C-4573-B1CE-7B02FCF10E93} = {2F2FEC79-D748-4009-94DB-B786EBB63A7D}
+		{804DC374-2904-4DA9-AF62-50369AF4D561} = {067DAF33-7510-46CD-AE8D-0522C30296AE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FB026A11-DC90-4B54-AB32-7C0AC8D5EC70}

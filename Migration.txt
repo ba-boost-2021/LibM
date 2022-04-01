@@ -1,0 +1,4 @@
+ Add-Migration -Name [Migration-Name] -P LibM.Data.Access -C LibMDbContext -S LibM
+ ----------------
+ Update-Database -P LibM.Data.Access -Context LibMDbContext -S LibM
+
