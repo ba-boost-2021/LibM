@@ -17,6 +17,7 @@ namespace LibM.Services.Repositories
         public List<TransactionViewDto> GetAllTransaction()
         {
             return context.Transactions.Include(t => t.Student)
+                                       .Include(z => z.Employee)
                                        .Include(z => z.Book)
                                        .ThenInclude(b => b.Author)
                                        .Select(x => new TransactionViewDto
@@ -24,8 +25,9 @@ namespace LibM.Services.Repositories
                                             AuthorName = x.Book.Author.FirstName,
                                             BookName = x.Book.Name,
                                             StudentName = x.Student.FirstName,
-                                            BorrowingDate = x.BorrowingData.ToShortDateString(),
-                                            ReturnDate = x.ReturnDate.ToShortDateString()
+                                            BorrowingDate = x.BorrowingDate.ToShortDateString(),
+                                            ReturnDate = x.ReturnDate.ToShortDateString(),
+                                            EmployeeName = x.Employee.FirstName
                                        }).ToList();
         }
     }

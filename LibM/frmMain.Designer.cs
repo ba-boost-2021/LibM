@@ -29,27 +29,91 @@
         private void InitializeComponent()
         {
             this.dgvTransactions = new System.Windows.Forms.DataGridView();
+            this.StudentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BookName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AuthorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BorrowingDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReturnDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EmployeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.booksManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.studentManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.employeeManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.authorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.typesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.booksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransactions)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvTransactions
             // 
+            this.dgvTransactions.AllowUserToAddRows = false;
+            this.dgvTransactions.AllowUserToDeleteRows = false;
+            this.dgvTransactions.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTransactions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTransactions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.StudentName,
+            this.BookName,
+            this.AuthorName,
+            this.BorrowingDate,
+            this.ReturnDate,
+            this.EmployeeName});
             this.dgvTransactions.Location = new System.Drawing.Point(12, 61);
             this.dgvTransactions.Name = "dgvTransactions";
+            this.dgvTransactions.ReadOnly = true;
             this.dgvTransactions.RowTemplate.Height = 25;
             this.dgvTransactions.Size = new System.Drawing.Size(989, 472);
             this.dgvTransactions.TabIndex = 0;
+            // 
+            // StudentName
+            // 
+            this.StudentName.DataPropertyName = "StudentName";
+            this.StudentName.HeaderText = "Öğrenci";
+            this.StudentName.Name = "StudentName";
+            this.StudentName.ReadOnly = true;
+            // 
+            // BookName
+            // 
+            this.BookName.DataPropertyName = "BookName";
+            this.BookName.HeaderText = "Kitap";
+            this.BookName.Name = "BookName";
+            this.BookName.ReadOnly = true;
+            // 
+            // AuthorName
+            // 
+            this.AuthorName.DataPropertyName = "AuthorName";
+            this.AuthorName.HeaderText = "Yazar";
+            this.AuthorName.Name = "AuthorName";
+            this.AuthorName.ReadOnly = true;
+            // 
+            // BorrowingDate
+            // 
+            this.BorrowingDate.DataPropertyName = "BorrowingDate";
+            this.BorrowingDate.HeaderText = "Alış Tarihi";
+            this.BorrowingDate.Name = "BorrowingDate";
+            this.BorrowingDate.ReadOnly = true;
+            // 
+            // ReturnDate
+            // 
+            this.ReturnDate.DataPropertyName = "ReturnDate";
+            this.ReturnDate.HeaderText = "Teslim Tarihi";
+            this.ReturnDate.Name = "ReturnDate";
+            this.ReturnDate.ReadOnly = true;
+            // 
+            // EmployeeName
+            // 
+            this.EmployeeName.DataPropertyName = "EmployeeName";
+            this.EmployeeName.HeaderText = "Personel";
+            this.EmployeeName.Name = "EmployeeName";
+            this.EmployeeName.ReadOnly = true;
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.booksManagementToolStripMenuItem,
-            this.studentManagementToolStripMenuItem});
+            this.studentManagementToolStripMenuItem,
+            this.employeeManagementToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1013, 24);
@@ -58,15 +122,43 @@
             // 
             // booksManagementToolStripMenuItem
             // 
+            this.booksManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.authorsToolStripMenuItem,
+            this.typesToolStripMenuItem,
+            this.booksToolStripMenuItem});
             this.booksManagementToolStripMenuItem.Name = "booksManagementToolStripMenuItem";
-            this.booksManagementToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
-            this.booksManagementToolStripMenuItem.Text = "Books Management";
+            this.booksManagementToolStripMenuItem.Size = new System.Drawing.Size(129, 20);
+            this.booksManagementToolStripMenuItem.Text = "Library Manegement";
             // 
             // studentManagementToolStripMenuItem
             // 
             this.studentManagementToolStripMenuItem.Name = "studentManagementToolStripMenuItem";
             this.studentManagementToolStripMenuItem.Size = new System.Drawing.Size(134, 20);
             this.studentManagementToolStripMenuItem.Text = "Student Management";
+            // 
+            // employeeManagementToolStripMenuItem
+            // 
+            this.employeeManagementToolStripMenuItem.Name = "employeeManagementToolStripMenuItem";
+            this.employeeManagementToolStripMenuItem.Size = new System.Drawing.Size(145, 20);
+            this.employeeManagementToolStripMenuItem.Text = "Employee Management";
+            // 
+            // authorsToolStripMenuItem
+            // 
+            this.authorsToolStripMenuItem.Name = "authorsToolStripMenuItem";
+            this.authorsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.authorsToolStripMenuItem.Text = "Authors";
+            // 
+            // typesToolStripMenuItem
+            // 
+            this.typesToolStripMenuItem.Name = "typesToolStripMenuItem";
+            this.typesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.typesToolStripMenuItem.Text = "Types";
+            // 
+            // booksToolStripMenuItem
+            // 
+            this.booksToolStripMenuItem.Name = "booksToolStripMenuItem";
+            this.booksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.booksToolStripMenuItem.Text = "Books";
             // 
             // frmMain
             // 
@@ -96,5 +188,15 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem booksManagementToolStripMenuItem;
         private ToolStripMenuItem studentManagementToolStripMenuItem;
+        private DataGridViewTextBoxColumn StudentName;
+        private DataGridViewTextBoxColumn BookName;
+        private DataGridViewTextBoxColumn AuthorName;
+        private DataGridViewTextBoxColumn BorrowingDate;
+        private DataGridViewTextBoxColumn ReturnDate;
+        private DataGridViewTextBoxColumn EmployeeName;
+        private ToolStripMenuItem authorsToolStripMenuItem;
+        private ToolStripMenuItem typesToolStripMenuItem;
+        private ToolStripMenuItem booksToolStripMenuItem;
+        private ToolStripMenuItem employeeManagementToolStripMenuItem;
     }
 }
