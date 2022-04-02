@@ -138,7 +138,7 @@
             this.authorsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addAuthorsToolStripMenuItem});
             this.authorsToolStripMenuItem.Name = "authorsToolStripMenuItem";
-            this.authorsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.authorsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.authorsToolStripMenuItem.Text = "Authors";
             this.authorsToolStripMenuItem.Click += new System.EventHandler(this.authorsToolStripMenuItem_Click);
             // 
@@ -154,14 +154,14 @@
             this.typesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addTypesToolStripMenuItem});
             this.typesToolStripMenuItem.Name = "typesToolStripMenuItem";
-            this.typesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.typesToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.typesToolStripMenuItem.Text = "Types";
             this.typesToolStripMenuItem.Click += new System.EventHandler(this.typesToolStripMenuItem_Click);
             // 
             // booksToolStripMenuItem
             // 
             this.booksToolStripMenuItem.Name = "booksToolStripMenuItem";
-            this.booksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.booksToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.booksToolStripMenuItem.Text = "Books";
             this.booksToolStripMenuItem.Click += new System.EventHandler(this.booksToolStripMenuItem_Click);
             // 
@@ -174,6 +174,8 @@
             // 
             // employeeManagementToolStripMenuItem
             // 
+            this.employeeManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.yeniÇalışanKaydıToolStripMenuItem});
             this.employeeManagementToolStripMenuItem.Name = "employeeManagementToolStripMenuItem";
             this.employeeManagementToolStripMenuItem.Size = new System.Drawing.Size(145, 20);
             this.employeeManagementToolStripMenuItem.Text = "Employee Management";
@@ -188,13 +190,6 @@
             this.btnAdd.Text = "Yeni İşlem";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // addTypesToolStripMenuItem
-            // 
-            this.addTypesToolStripMenuItem.Name = "addTypesToolStripMenuItem";
-            this.addTypesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.addTypesToolStripMenuItem.Text = "Add Types";
-            this.addTypesToolStripMenuItem.Click += new System.EventHandler(this.addTypesToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -237,7 +232,5 @@
         private ToolStripMenuItem booksToolStripMenuItem;
         private ToolStripMenuItem employeeManagementToolStripMenuItem;
         private Button btnAdd;
-        private ToolStripMenuItem addAuthorsToolStripMenuItem;
-        private ToolStripMenuItem addTypesToolStripMenuItem;
     }
 }
