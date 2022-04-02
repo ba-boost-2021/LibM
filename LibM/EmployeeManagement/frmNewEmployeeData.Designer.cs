@@ -36,6 +36,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.dgvEmployees = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSave
@@ -106,11 +108,23 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Telefon No. :";
             // 
+            // dgvEmployees
+            // 
+            this.dgvEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEmployees.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmployees.Location = new System.Drawing.Point(294, 12);
+            this.dgvEmployees.Name = "dgvEmployees";
+            this.dgvEmployees.RowTemplate.Height = 25;
+            this.dgvEmployees.Size = new System.Drawing.Size(335, 177);
+            this.dgvEmployees.TabIndex = 6;
+            // 
             // frmNewEmployeeData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(325, 200);
+            this.ClientSize = new System.Drawing.Size(637, 200);
+            this.Controls.Add(this.dgvEmployees);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -121,6 +135,7 @@
             this.Controls.Add(this.btnSave);
             this.Name = "frmNewEmployeeData";
             this.Text = "frmNewEmployeeData";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,5 +151,6 @@
         private Label label2;
         private TextBox txtPhone;
         private Label label4;
+        private DataGridView dgvEmployees;
     }
 }
