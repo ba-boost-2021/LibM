@@ -45,5 +45,10 @@ namespace LibM.EmployeeManagement
             txtLastName.Clear();
             txtPhone.Clear();
         }
+
+        private void frmNewEmployeeData_Load(object sender, EventArgs e)
+        {
+            dgvEmployees.DataSource = new BindingList<EmployeeViewDto>(employeeRepository.GetAllEmployees());
+        }
     }
 }
