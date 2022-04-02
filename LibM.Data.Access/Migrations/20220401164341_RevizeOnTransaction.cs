@@ -1,4 +1,4 @@
-﻿using System;
+﻿using LibM.Data.Seeder;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
@@ -38,6 +38,8 @@ namespace LibM.Data.Access.Migrations
                 principalTable: "Employees",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Cascade);
+
+            migrationBuilder.InitialSeeder();
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

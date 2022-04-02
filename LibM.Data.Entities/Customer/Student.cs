@@ -1,11 +1,6 @@
 ﻿using LibM.Data.Entities.Enums;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LibM.Data.Entities.Customer
 {
@@ -30,5 +25,6 @@ namespace LibM.Data.Entities.Customer
         [MaxLength(20)]
         public string Grade { get; set; }
 
+        public ICollection<Transaction> Transactions { get; set; }
     }
 }

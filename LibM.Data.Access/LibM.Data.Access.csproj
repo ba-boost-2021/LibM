@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LibM.Data.Entities\LibM.Data.Entities.csproj" />
+    <ProjectReference Include="..\LibM.Data.Seeder\LibM.Data.Seeder.csproj" />
   </ItemGroup>
 
 </Project>
