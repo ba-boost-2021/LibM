@@ -36,13 +36,14 @@ namespace LibM.EmployeeManagement
             {
                 MessageBox.Show("İşlem Başarılı olmamıştır. Lütfen Tekrar Deneyiniz.", "Başarısız İşlem", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            dgvEmployees.DataSource = null;
+            dgvEmployees.DataSource = new BindingList<EmployeeViewDto>(employeeRepository.GetAllEmployees());
         }
         private void btnClear_Click(object sender, EventArgs e)
         {
             txtFirstName.Clear();
             txtLastName.Clear();
             txtPhone.Clear();
-
         }
     }
 }
