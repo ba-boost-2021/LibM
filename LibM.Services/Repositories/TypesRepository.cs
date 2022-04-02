@@ -1,4 +1,5 @@
-﻿using LibM.Contracts.Types;
+﻿using LibM.Contracts;
+using LibM.Contracts.Types;
 using LibM.Data.Access;
 using LibM.Data.Access.Managers;
 
@@ -18,6 +19,15 @@ namespace LibM.Services.Repositories
             return context.Types.Select(t => new TypesViewDto
             {
                 Name = t.Name
+            }).ToList();
+        }
+
+        public List<OptionDto> GetTypesAsOptions()
+        {
+            return context.Types.Select(t => new OptionDto
+            {
+                Code = t.Id,
+                Label = t.Name
             }).ToList();
         }
     }

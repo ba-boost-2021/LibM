@@ -1,4 +1,5 @@
-﻿using LibM.Contracts.Author;
+﻿using LibM.Contracts;
+using LibM.Contracts.Author;
 using LibM.Data.Access;
 using LibM.Data.Access.Managers;
 using Microsoft.EntityFrameworkCore;
@@ -25,7 +26,14 @@ namespace LibM.Services.Repositories
                 LastName = x.LastName,
             }).ToList();
         }
-        
 
+        public List<OptionDto> GetAuthorsAsOptions()
+        {
+            return context.Authors.Select(x => new OptionDto
+            {
+                Code = x.Id,
+                Label = $"{x.FirstName} {x.LastName}"
+            }).ToList();
+        }
     }
 }

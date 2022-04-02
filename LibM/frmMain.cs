@@ -49,5 +49,11 @@ namespace LibM
             frmBook.ShowDialog();
             
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            var frmNewTransaction = new frmNewTransaction();
+            frmNewTransaction.ShowDialog();
+        }
     }
 }
