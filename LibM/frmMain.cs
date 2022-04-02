@@ -1,4 +1,5 @@
 using LibM.Contracts.Transaction;
+using LibM.EmployeeManagement;
 using LibM.Services.Repositories;
 using System.ComponentModel;
 
@@ -54,6 +55,12 @@ namespace LibM
         {
             var frmNewTransaction = new frmNewTransaction();
             frmNewTransaction.ShowDialog();
+        }
+
+        private void yeniÇalýþanKaydýToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var newEmployee = new frmNewEmployeeData();
+            newEmployee.ShowDialog();
         }
     }
 }
