@@ -2,6 +2,7 @@
 using LibM.Contracts.Books;
 using LibM.Data.Access;
 using LibM.Data.Access.Managers;
+using LibM.Data.Entities.Definition;
 using Microsoft.EntityFrameworkCore;
 
 namespace LibM.Services.Repositories
@@ -45,6 +46,24 @@ namespace LibM.Services.Repositories
                 Label = x.Name
             }).ToList();
             return result;
+        }
+
+        public bool AddNewBook(NewBookDto book)
+        {
+
+            var entity = new Book()
+            {
+                Available = book.Available,
+                AuthorId = book.AuthorId,
+                CreatedAt = DateTime.Now,
+                ModifiedAt = DateTime.Now,
+                Name = book.Name,
+                PageCount = book.PageCount,
+                TypeId = book.TypeId,
+            };
+            context.Books.Add(entity);
+            var result = context.SaveChanges();
+            return result > 0;
         }
     }
 }

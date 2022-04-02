@@ -25,5 +25,15 @@ namespace LibM.Books
         {
             dgvBooksInformation.DataSource = new BindingList<BookViewDto>(bookRepository.GetAllBooks());
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            var frmBook = new frmAddBooks();  
+            
+            frmBook.ShowDialog();
+
+            dgvBooksInformation.DataSource = null;
+            dgvBooksInformation.DataSource = new BindingList<BookViewDto>(bookRepository.GetAllBooks());
+        }
     }
 }
