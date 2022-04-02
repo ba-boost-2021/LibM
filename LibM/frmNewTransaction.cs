@@ -30,10 +30,6 @@ namespace LibM
         {
             cmbType.DataSource = typesRepository.GetTypesAsOptions();
             cmbAuthor.DataSource = authorRepository.GetAuthorsAsOptions();
-
-            cmbType.DisplayMember = nameof(OptionDto.Label);
-            cmbAuthor.DisplayMember = nameof(OptionDto.Label);
-            cmbBook.DisplayMember = nameof(OptionDto.Label);
         }
 
         private void cmbType_SelectedIndexChanged(object sender, EventArgs e)
@@ -44,7 +40,8 @@ namespace LibM
                  TypeId = ((OptionDto)cmbType.SelectedItem)?.Code
             };
             var result = bookRepository.GetBooksByOptionsAsOptions(dto);
-            cmbBook.DataSource = result.Count == 0 ? null : result;
+            cmbBook.Items.Clear();
+            cmbBook.Items.AddRange(result.ToArray());
         }
     }
 }
