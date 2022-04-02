@@ -36,7 +36,7 @@ namespace LibM.Services.Repositories
 
             if (dto.TypeId != null && dto.AuthorId != null)
             {
-                predicate = x => x.TypeId == dto.TypeId && dto.AuthorId == dto.AuthorId;
+                predicate = x => x.TypeId == dto.TypeId && x.AuthorId == dto.AuthorId;
             }
             else if (dto.AuthorId != null)
             {

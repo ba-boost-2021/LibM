@@ -25,7 +25,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Help", "Help", "{A6060046-3
 		Seed.sql = Seed.sql
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibM.Data.Seeder", "LibM.Data.Seeder\LibM.Data.Seeder.csproj", "{699DC282-FE85-4863-8961-7EA3D23BBECD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibM.Data.Seeder", "LibM.Data.Seeder\LibM.Data.Seeder.csproj", "{699DC282-FE85-4863-8961-7EA3D23BBECD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibM.Common", "LibM.Common\LibM.Common.csproj", "{FAD6A2C5-BB7A-4406-812E-3EA5CACFBE31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{699DC282-FE85-4863-8961-7EA3D23BBECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{699DC282-FE85-4863-8961-7EA3D23BBECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{699DC282-FE85-4863-8961-7EA3D23BBECD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAD6A2C5-BB7A-4406-812E-3EA5CACFBE31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAD6A2C5-BB7A-4406-812E-3EA5CACFBE31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAD6A2C5-BB7A-4406-812E-3EA5CACFBE31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAD6A2C5-BB7A-4406-812E-3EA5CACFBE31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +73,7 @@ Global
 		{576196A9-C40C-4573-B1CE-7B02FCF10E93} = {2F2FEC79-D748-4009-94DB-B786EBB63A7D}
 		{804DC374-2904-4DA9-AF62-50369AF4D561} = {067DAF33-7510-46CD-AE8D-0522C30296AE}
 		{699DC282-FE85-4863-8961-7EA3D23BBECD} = {C829BC2B-7638-47C0-96A1-E08B07263B1B}
+		{FAD6A2C5-BB7A-4406-812E-3EA5CACFBE31} = {067DAF33-7510-46CD-AE8D-0522C30296AE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FB026A11-DC90-4B54-AB32-7C0AC8D5EC70}

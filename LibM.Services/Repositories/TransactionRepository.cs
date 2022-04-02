@@ -1,7 +1,9 @@
-﻿using LibM.Contracts.Transaction;
+﻿using LibM.Common.Constants;
+using LibM.Contracts.Transaction;
 using LibM.Data.Access;
 using LibM.Data.Access.Managers;
 using Microsoft.EntityFrameworkCore;
+using System.Transactions;
 
 namespace LibM.Services.Repositories
 {
@@ -26,9 +28,24 @@ namespace LibM.Services.Repositories
                                             BookName = x.Book.Name,
                                             StudentName = x.Student.FirstName,
                                             BorrowingDate = x.BorrowingDate.ToShortDateString(),
-                                            ReturnDate = x.ReturnDate.ToShortDateString(),
+                                            ReturnDate = x.ReturnDate.Value.ToShortDateString(),
                                             EmployeeName = x.Employee.FirstName
                                        }).ToList();
+        }
+
+        public bool AddNewTransaction(NewTransactionDto dto)
+        {
+            var entity = new Data.Entities.Customer.Transaction
+            {
+                StudentId = dto.StudentId,
+                BookId = dto.BookId,
+                BorrowingDate = DateTime.Now,
+                CreatedAt = DateTime.Now,
+                EmployeeId = SystemParameters.SystemAdminId,
+                ModifiedAt = DateTime.Now,
+            };
+            context.Transactions.Add(entity);
+            return context.SaveChanges() > 0;
         }
     }
 }

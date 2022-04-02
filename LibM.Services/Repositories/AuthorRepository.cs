@@ -35,5 +35,14 @@ namespace LibM.Services.Repositories
                 Label = $"{x.FirstName} {x.LastName}"
             }).ToList();
         }
+
+        public List<OptionDto> GetAuthorsByType(Guid typeId)
+        {
+            return context.Books.Include(x => x.Type).Where(t => t.TypeId == typeId).Select(x => new OptionDto
+            {
+                Code = x.Author.Id,
+                Label = $"{x.Author.FirstName} {x.Author.LastName}"
+            }).Distinct().ToList();
+        }
     }
 }
