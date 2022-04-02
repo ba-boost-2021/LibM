@@ -135,6 +135,7 @@
             this.Controls.Add(this.btnSave);
             this.Name = "frmNewEmployeeData";
             this.Text = "frmNewEmployeeData";
+            this.Load += new System.EventHandler(this.frmNewEmployeeData_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
