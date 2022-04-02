@@ -24,5 +24,16 @@ namespace LibM
         {
             dgvStudents.DataSource = studentRepository.GetAllStudent();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            var addStudent = new frmAddStudent();
+           var result =  addStudent.ShowDialog();
+            if(result == DialogResult.OK)
+            {
+                dgvStudents.DataSource = null;
+                dgvStudents.DataSource = studentRepository.GetAllStudent();
+            }
+        }
     }
 }
