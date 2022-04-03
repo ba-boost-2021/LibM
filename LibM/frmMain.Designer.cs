@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.dgvTransactions = new System.Windows.Forms.DataGridView();
             this.StudentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,6 +43,7 @@
             this.booksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.studentManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.employeeDatasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransactions)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -134,21 +136,21 @@
             // authorsToolStripMenuItem
             // 
             this.authorsToolStripMenuItem.Name = "authorsToolStripMenuItem";
-            this.authorsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.authorsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.authorsToolStripMenuItem.Text = "Authors";
             this.authorsToolStripMenuItem.Click += new System.EventHandler(this.authorsToolStripMenuItem_Click);
             // 
             // typesToolStripMenuItem
             // 
             this.typesToolStripMenuItem.Name = "typesToolStripMenuItem";
-            this.typesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.typesToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.typesToolStripMenuItem.Text = "Types";
             this.typesToolStripMenuItem.Click += new System.EventHandler(this.typesToolStripMenuItem_Click);
             // 
             // booksToolStripMenuItem
             // 
             this.booksToolStripMenuItem.Name = "booksToolStripMenuItem";
-            this.booksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.booksToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.booksToolStripMenuItem.Text = "Books";
             this.booksToolStripMenuItem.Click += new System.EventHandler(this.booksToolStripMenuItem_Click);
             // 
@@ -161,10 +163,18 @@
             // 
             // employeeManagementToolStripMenuItem
             // 
+            this.employeeManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.employeeDatasToolStripMenuItem});
             this.employeeManagementToolStripMenuItem.Name = "employeeManagementToolStripMenuItem";
             this.employeeManagementToolStripMenuItem.Size = new System.Drawing.Size(145, 20);
             this.employeeManagementToolStripMenuItem.Text = "Employee Management";
-            this.employeeManagementToolStripMenuItem.Click += new System.EventHandler(this.employeeManagementToolStripMenuItem_Click);
+            // 
+            // employeeDatasToolStripMenuItem
+            // 
+            this.employeeDatasToolStripMenuItem.Name = "employeeDatasToolStripMenuItem";
+            this.employeeDatasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.employeeDatasToolStripMenuItem.Text = "Employee Datas";
+            this.employeeDatasToolStripMenuItem.Click += new System.EventHandler(this.employeeDatasToolStripMenuItem_Click);
             // 
             // btnAdd
             // 
@@ -184,6 +194,7 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvTransactions);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
@@ -217,5 +228,6 @@
         private ToolStripMenuItem booksToolStripMenuItem;
         private ToolStripMenuItem employeeManagementToolStripMenuItem;
         private Button btnAdd;
+        private ToolStripMenuItem employeeDatasToolStripMenuItem;
     }
 }
