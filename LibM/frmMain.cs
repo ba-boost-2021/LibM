@@ -62,5 +62,17 @@ namespace LibM
             frmNewTransaction.ShowDialog();
             LoadTransactions();
         }
+
+        private void addAuthorsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmNewAddAuthor = new frmNewAddAuthor();
+            frmNewAddAuthor.ShowDialog();
+        }
+
+        private void addTypesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmAddTypes = new frmAddTypes();
+            frmAddTypes.ShowDialog();
+        }
     }
 }

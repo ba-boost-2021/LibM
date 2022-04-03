@@ -1,4 +1,5 @@
 ﻿using LibM.Contracts;
+using LibM.Contracts.NewTypes;
 using LibM.Contracts.Types;
 using LibM.Data.Access;
 using LibM.Data.Access.Managers;
@@ -29,6 +30,17 @@ namespace LibM.Services.Repositories
                 Code = t.Id,
                 Label = t.Name
             }).ToList();
+        }
+
+        public bool CreateNewTypes(NewAddTypesViewDto newAddTypesViewDto)
+        {
+            var type = new Data.Entities.Definition.Type()
+            {
+                Name = newAddTypesViewDto.Name,
+            };
+            context.Add(type);
+            var result = context.SaveChanges();
+            return result == 1;
         }
     }
 }
