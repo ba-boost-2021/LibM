@@ -1,6 +1,6 @@
 ﻿namespace LibM
 {
-    partial class frmEmployeeManagement
+    partial class frmEmployeeDatas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEmployeeDatas));
             this.dgvEmployeeManagement = new System.Windows.Forms.DataGridView();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrevious = new System.Windows.Forms.Button();
@@ -62,7 +63,7 @@
             this.btnPrevious.Text = "◄";
             this.btnPrevious.UseVisualStyleBackColor = true;
             // 
-            // frmEmployeeManagement
+            // frmEmployeeDatas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -70,7 +71,8 @@
             this.Controls.Add(this.btnPrevious);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.dgvEmployeeManagement);
-            this.Name = "frmEmployeeManagement";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "frmEmployeeDatas";
             this.Text = "frmEmployeeManagement";
             this.Load += new System.EventHandler(this.frmEmployeeManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeeManagement)).EndInit();

@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace LibM
 {
-    public partial class frmEmployeeManagement : Form
+    public partial class frmEmployeeDatas : Form
     {
         private readonly EmployeeRepository employeeRepository;
-        public frmEmployeeManagement()
+        public frmEmployeeDatas()
         {
             InitializeComponent();
             employeeRepository = new EmployeeRepository();
