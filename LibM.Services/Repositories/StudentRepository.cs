@@ -1,7 +1,6 @@
 ﻿using LibM.Contracts.Student;
 using LibM.Data.Access;
 using LibM.Data.Access.Managers;
-using LibM.Data.Entities.Customer;
 
 namespace LibM.Services.Repositories
 {
@@ -26,27 +25,6 @@ namespace LibM.Services.Repositories
                 Grade = x.Grade,
                 TransCount = context.Transactions.Count(y => y.StudentId == x.Id)
             }).ToList();
-        }
-
-        public bool AddStudents(NewStudentDto student)
-        {
-            var stu = new Student
-            {
-                FirstName = student.FirstName,
-                LastName = student.LastName,
-                Gender = student.Gender,
-                BirthDate = student.BirthDate,
-                Grade = student.Grade,
-                CreatedAt = DateTime.Now,
-                ModifiedAt = DateTime.Now
-                
-            };
-            context.Students.Add(stu);
-
-            var result = context.SaveChanges();
-
-            return result == 1;
-
         }
     }
 }
