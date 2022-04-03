@@ -24,6 +24,7 @@ namespace LibM.Data.Entities.Customer
         [Required]
         [MaxLength(20)]
         public string Grade { get; set; }
+      
 
         public ICollection<Transaction> Transactions { get; set; }
     }
