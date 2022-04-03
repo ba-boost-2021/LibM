@@ -34,19 +34,18 @@ namespace LibM
             {
                 selectedGender = Gender.NotSpecified;
             }
-            var student = new StudentViewDto
+            var student = new NewStudentDto
             {
                 FirstName = txtFirstname.Text,
                 LastName = txtLastName.Text,
                 Grade = txtGrade.Text,
                 BirthDate = dtpBirthdate.Value,
-                Id = new Guid(),
                 Gender = selectedGender
             };
 
             var result = studentRepository.AddStudents(student);
 
-            if(result == false)
+            if(!result)
             {
                 MessageBox.Show("Hata");
                 return;

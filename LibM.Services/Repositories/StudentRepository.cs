@@ -28,16 +28,18 @@ namespace LibM.Services.Repositories
             }).ToList();
         }
 
-        public bool AddStudents(StudentViewDto student)
+        public bool AddStudents(NewStudentDto student)
         {
             var stu = new Student
             {
-                Id = student.Id,
                 FirstName = student.FirstName,
                 LastName = student.LastName,
                 Gender = student.Gender,
                 BirthDate = student.BirthDate,
-                Grade = student.Grade
+                Grade = student.Grade,
+                CreatedAt = DateTime.Now,
+                ModifiedAt = DateTime.Now
+                
             };
             context.Students.Add(stu);
 
