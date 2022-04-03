@@ -68,8 +68,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(486, 322);
             this.Controls.Add(this.dgvAuthor);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmAuthor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Authors";
             this.Load += new System.EventHandler(this.frmAuthor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAuthor)).EndInit();

@@ -40,20 +40,20 @@
             this.dgvStudents.AllowUserToDeleteRows = false;
             this.dgvStudents.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStudents.Location = new System.Drawing.Point(0, 62);
-            this.dgvStudents.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgvStudents.Location = new System.Drawing.Point(0, 37);
             this.dgvStudents.Name = "dgvStudents";
             this.dgvStudents.ReadOnly = true;
             this.dgvStudents.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvStudents.RowTemplate.Height = 25;
-            this.dgvStudents.Size = new System.Drawing.Size(1143, 688);
+            this.dgvStudents.Size = new System.Drawing.Size(800, 413);
             this.dgvStudents.TabIndex = 0;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(1019, 12);
+            this.btnAdd.Location = new System.Drawing.Point(713, 7);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(112, 34);
+            this.btnAdd.Size = new System.Drawing.Size(78, 20);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "Add Student";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -61,15 +61,18 @@
             // 
             // frmStudents
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1143, 750);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvStudents);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmStudents";
-            this.Text = "frmStudents";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Öğrenci Sayfası";
             this.Load += new System.EventHandler(this.frmStudents_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).EndInit();
             this.ResumeLayout(false);
