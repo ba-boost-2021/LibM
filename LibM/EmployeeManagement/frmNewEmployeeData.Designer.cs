@@ -136,6 +136,7 @@
             this.Controls.Add(this.btnSave);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmNewEmployeeData";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmNewEmployeeData";
             this.Load += new System.EventHandler(this.frmNewEmployeeData_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).EndInit();
