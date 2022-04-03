@@ -4,6 +4,7 @@ using LibM.Data.Access;
 using LibM.Data.Access.Managers;
 using LibM.Data.Entities.Definition;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace LibM.Services.Repositories
 {
@@ -31,16 +32,26 @@ namespace LibM.Services.Repositories
 
         public List<OptionDto> GetBooksByOptionsAsOptions(BooksListOptionDto dto)
         {
-            var queryBase = context.Books.AsQueryable();
-            if (dto.TypeId != null)
+            Expression<Func<Book, bool>> predicate;
+
+            if (dto.TypeId != null && dto.AuthorId != null)
             {
-                queryBase = queryBase.Where(x => x.TypeId == dto.TypeId);
+                predicate = x => x.TypeId == dto.TypeId && x.AuthorId == dto.AuthorId;
             }
-            if (dto.AuthorId != null)
+            else if (dto.AuthorId != null)
             {
-                queryBase = queryBase.Where(x => x.AuthorId == dto.AuthorId);
+                predicate = x => x.AuthorId == dto.AuthorId;
             }
-            var result = queryBase.Select(x => new OptionDto
+            else if (dto.TypeId != null)
+            {
+                predicate = x => x.TypeId == dto.TypeId;
+            }
+            else
+            {
+                return null;
+            }
+
+            var result = context.Books.Where(predicate).Select(x => new OptionDto
             {
                 Code = x.Id,
                 Label = x.Name

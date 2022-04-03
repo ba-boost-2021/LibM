@@ -1,7 +1,9 @@
-﻿using LibM.Contracts.Student;
+﻿using LibM.Contracts;
+using LibM.Contracts.Student;
 using LibM.Data.Access;
 using LibM.Data.Access.Managers;
 using LibM.Data.Entities.Customer;
+using System.Linq.Expressions;
 
 namespace LibM.Services.Repositories
 {
@@ -47,6 +49,20 @@ namespace LibM.Services.Repositories
 
             return result == 1;
 
+        }
+
+        public List<OptionDto> GetStudentsAsOptions(string filter = null)
+        {
+            Expression<Func<Student, bool>> predicate = x=>true;
+            if (filter is not null)
+            {
+                predicate = x=>x.FirstName.StartsWith(filter);
+            }
+            return context.Students.Where(predicate).Select(x => new OptionDto
+            {
+                Label = $"{x.FirstName} {x.LastName}",
+                Code = x.Id
+            }).ToList();
         }
     }
 }

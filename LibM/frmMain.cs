@@ -16,6 +16,12 @@ namespace LibM
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            LoadTransactions();
+        }
+
+        private void LoadTransactions()
+        {
+            dgvTransactions.DataSource = null;
             dgvTransactions.DataSource = new BindingList<TransactionViewDto>(transactionRepository.GetAllTransaction());
         }
 
@@ -54,6 +60,7 @@ namespace LibM
         {
             var frmNewTransaction = new frmNewTransaction();
             frmNewTransaction.ShowDialog();
+            LoadTransactions();
         }
     }
 }

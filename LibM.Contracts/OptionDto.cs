@@ -10,5 +10,9 @@ namespace LibM.Contracts
     {
         public string Label { get; set; }
         public Guid Code { get; set; }
+        public override string ToString()
+        {
+            return Label;
+        }
     }
 }

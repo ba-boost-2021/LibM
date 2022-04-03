@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LibM.Common\LibM.Common.csproj" />
     <ProjectReference Include="..\LibM.Contracts\LibM.Contracts.csproj" />
     <ProjectReference Include="..\LibM.Data.Access\LibM.Data.Access.csproj" />
   </ItemGroup>

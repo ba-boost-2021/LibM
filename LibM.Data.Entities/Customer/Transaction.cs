@@ -24,9 +24,7 @@ namespace LibM.Data.Entities.Customer
 
         [Required]
         public DateTime BorrowingDate { get; set; }
-
-        [Required]
-        public DateTime ReturnDate { get; set; }
+        public DateTime? ReturnDate { get; set; }
         
         [ForeignKey(nameof(StudentId))]
         public Student Student { get; set; }
