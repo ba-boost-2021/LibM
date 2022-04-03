@@ -37,12 +37,6 @@ namespace LibM
             var frmAuthor = new frmAuthor();
             frmAuthor.ShowDialog();
         }
-        private void employeeManagementToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var frmEmployeesManagement = new frmEmployeeManagement();
-            frmEmployeesManagement.ShowDialog();
-        }
-
         private void booksToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
@@ -57,10 +51,16 @@ namespace LibM
             frmNewTransaction.ShowDialog();
         }
 
-        private void yeniÇalýþanKaydýToolStripMenuItem_Click(object sender, EventArgs e)
+        private void CreateNewEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var newEmployee = new frmNewEmployeeData();
             newEmployee.ShowDialog();
+        }
+
+        private void employeeDatasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmEmployeeDatas = new frmEmployeeDatas();
+            frmEmployeeDatas.ShowDialog();
         }
     }
 }

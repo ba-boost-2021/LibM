@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNewTransaction));
             this.cmbStudents = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dtpBorrowingDate = new System.Windows.Forms.DateTimePicker();
@@ -118,7 +119,7 @@
             this.lbltype.AutoSize = true;
             this.lbltype.Location = new System.Drawing.Point(129, 19);
             this.lbltype.Name = "lbltype";
-            this.lbltype.Size = new System.Drawing.Size(25, 15);
+            this.lbltype.Size = new System.Drawing.Size(24, 15);
             this.lbltype.TabIndex = 1;
             this.lbltype.Text = "Tür";
             // 
@@ -165,6 +166,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmNewTransaction";
