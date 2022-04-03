@@ -39,13 +39,11 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.booksManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.authorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addAuthorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.typesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.booksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.studentManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.addTypesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeDatasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransactions)).BeginInit();
@@ -138,8 +136,7 @@
             // 
             // authorsToolStripMenuItem
             // 
-            this.authorsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addAuthorsToolStripMenuItem});
+            
             this.authorsToolStripMenuItem.Name = "authorsToolStripMenuItem";
             this.authorsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.authorsToolStripMenuItem.Text = "Authors";
@@ -147,15 +144,11 @@
             // 
             // addAuthorsToolStripMenuItem
             // 
-            this.addAuthorsToolStripMenuItem.Name = "addAuthorsToolStripMenuItem";
-            this.addAuthorsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.addAuthorsToolStripMenuItem.Text = "Add Authors";
-            this.addAuthorsToolStripMenuItem.Click += new System.EventHandler(this.addAuthorsToolStripMenuItem_Click);
+            
             // 
             // typesToolStripMenuItem
             // 
-            this.typesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addTypesToolStripMenuItem});
+            
             this.typesToolStripMenuItem.Name = "typesToolStripMenuItem";
             this.typesToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.typesToolStripMenuItem.Text = "Types";
