@@ -178,8 +178,7 @@
             // employeeManagementToolStripMenuItem
             // 
             this.employeeManagementToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.employeeDatasToolStripMenuItem,
-            this.yeniÇalışanKaydıToolStripMenuItem});
+            this.employeeDatasToolStripMenuItem});
             this.employeeManagementToolStripMenuItem.Name = "employeeManagementToolStripMenuItem";
             this.employeeManagementToolStripMenuItem.Size = new System.Drawing.Size(145, 20);
             this.employeeManagementToolStripMenuItem.Text = "Employee Management";
@@ -187,16 +186,9 @@
             // employeeDatasToolStripMenuItem
             // 
             this.employeeDatasToolStripMenuItem.Name = "employeeDatasToolStripMenuItem";
-            this.employeeDatasToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.employeeDatasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.employeeDatasToolStripMenuItem.Text = "Employee Datas";
             this.employeeDatasToolStripMenuItem.Click += new System.EventHandler(this.employeeDatasToolStripMenuItem_Click);
-            // 
-            // yeniÇalışanKaydıToolStripMenuItem
-            // 
-            this.yeniÇalışanKaydıToolStripMenuItem.Name = "yeniÇalışanKaydıToolStripMenuItem";
-            this.yeniÇalışanKaydıToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.yeniÇalışanKaydıToolStripMenuItem.Text = "Create New Employee";
-            this.yeniÇalışanKaydıToolStripMenuItem.Click += new System.EventHandler(this.CreateNewEmployeeToolStripMenuItem_Click);
             // 
             // btnAdd
             // 
@@ -250,6 +242,6 @@
         private ToolStripMenuItem booksToolStripMenuItem;
         private ToolStripMenuItem employeeManagementToolStripMenuItem;
         private Button btnAdd;
-        private ToolStripMenuItem yeniÇalışanKaydıToolStripMenuItem;
+        private ToolStripMenuItem employeeDatasToolStripMenuItem;
     }
 }

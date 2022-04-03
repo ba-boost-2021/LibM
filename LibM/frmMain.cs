@@ -14,7 +14,6 @@ namespace LibM
             InitializeComponent();
             transactionRepository = new TransactionRepository();
         }
-
         private void frmMain_Load(object sender, EventArgs e)
         {
             LoadTransactions();
@@ -25,19 +24,16 @@ namespace LibM
             dgvTransactions.DataSource = null;
             dgvTransactions.DataSource = new BindingList<TransactionViewDto>(transactionRepository.GetAllTransaction());
         }
-
         private void studentManagementToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var frmStudent = new frmStudents();
             frmStudent.ShowDialog();
         }
-
         private void typesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var frmType = new frmTypes();
             frmType.ShowDialog();
         }
-
         private void authorsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var frmAuthor = new frmAuthor();
@@ -50,7 +46,6 @@ namespace LibM
             frmBook.ShowDialog();
             
         }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
             var frmNewTransaction = new frmNewTransaction();
@@ -73,7 +68,7 @@ namespace LibM
         private void employeeDatasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var frmEmployeeDatas = new frmEmployeeDatas();
-            frmEmployeeDatas.ShowDialog();
+            frmEmployeeDatas.Show();
         }
     }
 }

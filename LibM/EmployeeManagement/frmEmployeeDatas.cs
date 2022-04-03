@@ -1,4 +1,5 @@
 ﻿using LibM.Contracts.Employee;
+using LibM.EmployeeManagement;
 using LibM.Services.Repositories;
 using System;
 using System.Collections.Generic;
@@ -24,6 +25,12 @@ namespace LibM
         private void frmEmployeeManagement_Load(object sender, EventArgs e)
         {
             dgvEmployeeManagement.DataSource = new BindingList<EmployeeViewDto>(employeeRepository.GetAllEmployees());
+        }
+
+        private void btnNewEmployee_Click(object sender, EventArgs e)
+        {
+            var frmNewEmployee = new frmNewEmployeeData();
+            frmNewEmployee.Show();
         }
     }
 }
