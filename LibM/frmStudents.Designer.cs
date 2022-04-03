@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStudents));
             this.dgvStudents = new System.Windows.Forms.DataGridView();
             this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
@@ -65,6 +66,7 @@
             this.ClientSize = new System.Drawing.Size(1143, 750);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvStudents);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmStudents";
             this.Text = "frmStudents";

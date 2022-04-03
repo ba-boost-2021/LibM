@@ -1,5 +1,5 @@
 {
   "Database": {
-    "LibMConnectionString": "Server = localhost; Database = LibMDb; User Id=libmdbowner; Password= 1q2w3e4R!"
+    "LibMConnectionString": "Server = localhost,12000; Database = LibMDb; User Id=sa; Password= 1q2w3e4R!"
   }
 }
