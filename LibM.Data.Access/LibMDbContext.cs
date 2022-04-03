@@ -17,6 +17,7 @@ namespace LibM.Data.Access
         public DbSet<Book> Books { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
+        
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
