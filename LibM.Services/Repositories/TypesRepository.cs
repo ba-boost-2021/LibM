@@ -32,11 +32,11 @@ namespace LibM.Services.Repositories
             }).ToList();
         }
 
-        public bool CreateNewTypes(NewAddTypesViewDto newaddtypesviewdto)
+        public bool CreateNewTypes(NewAddTypesViewDto newAddTypesViewDto)
         {
             var type = new Data.Entities.Definition.Type()
             {
-                Name = newaddtypesviewdto.Name,
+                Name = newAddTypesViewDto.Name,
             };
             context.Add(type);
             var result = context.SaveChanges();
