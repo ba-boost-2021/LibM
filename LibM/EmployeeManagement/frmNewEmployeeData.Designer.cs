@@ -134,10 +134,13 @@
             this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSave);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmNewEmployeeData";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmNewEmployeeData";
+            this.Text = "Çalışan Ekleme Sayfası";
             this.Load += new System.EventHandler(this.frmNewEmployeeData_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).EndInit();
             this.ResumeLayout(false);

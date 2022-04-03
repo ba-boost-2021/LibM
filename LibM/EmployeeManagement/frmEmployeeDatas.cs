@@ -30,7 +30,7 @@ namespace LibM
         private void btnNewEmployee_Click(object sender, EventArgs e)
         {
             var frmNewEmployee = new frmNewEmployeeData();
-            frmNewEmployee.Show();
+            frmNewEmployee.ShowDialog();
         }
     }
 }
