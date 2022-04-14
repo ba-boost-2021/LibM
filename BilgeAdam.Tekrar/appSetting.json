@@ -1,0 +1,11 @@
+﻿{
+  "Database": {
+    "Rdb": {
+      "NorthwindConnectionString": "Server=.;Database=Northwind;User Id=sa;Password=123",
+      "StoreConnectionString": "Server=localhost,20000;Database=StoreDb;User Id=sa;Password=Bilgeadam123!"
+    },
+    "NoSql": {
+      "MongoConnectionString": ""
+    }
+  }
+}

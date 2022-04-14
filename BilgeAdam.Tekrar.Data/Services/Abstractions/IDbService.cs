@@ -11,5 +11,6 @@ namespace BilgeAdam.Tekrar.Data.Services.Abstractions
     {
         List<ProductViewDto> GetAllProducts();
         bool AddNewProduct(string productName, decimal unitPrice);
+        List<CategoryViewDto> GetAllCategories();
     }
 }

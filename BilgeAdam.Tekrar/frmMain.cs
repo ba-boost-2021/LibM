@@ -10,14 +10,15 @@ namespace BilgeAdam.Tekrar
         public frmMain()
         {
             InitializeComponent();
-            //service = new AdoNetService();
+            service = new AdoNetService();
             //service = new DapperService();
-            service = new EFService();
+            //service = new EFService();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             dgvProducts.DataSource = service.GetAllProducts();
+            var categories = service.GetAllCategories();
         }
 
         private void btnNew_Click(object sender, EventArgs e)

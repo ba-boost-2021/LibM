@@ -29,6 +29,11 @@ namespace BilgeAdam.Tekrar.Data.Services.Concretes
             return result > 0;
         }
 
+        public List<CategoryViewDto> GetAllCategories()
+        {
+            throw new NotImplementedException();
+        }
+
         public List<ProductViewDto> GetAllProducts()
         {
             var connectionString = ConfigurationManager.ConnectionStrings["NorthwindConnectionString"].ConnectionString;

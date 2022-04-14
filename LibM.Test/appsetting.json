@@ -1,0 +1,5 @@
+{
+  "Database": {
+    "LibMConnectionString": "Server = localhost,20000; Database = LibMTestDb; User Id=sa; Password= Bilgeadam123!"
+  }
+}
