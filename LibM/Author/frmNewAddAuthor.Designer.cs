@@ -40,7 +40,7 @@
             this.txtFirstName.Location = new System.Drawing.Point(83, 57);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(155, 23);
-            this.txtFirstName.TabIndex = 0;
+            this.txtFirstName.TabIndex = 1;
             // 
             // label1
             // 
@@ -56,7 +56,7 @@
             this.btnSave.Location = new System.Drawing.Point(163, 160);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 2;
+            this.btnSave.TabIndex = 3;
             this.btnSave.Text = "Kaydet";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.button1_Click);
@@ -66,7 +66,7 @@
             this.txtLastName.Location = new System.Drawing.Point(83, 106);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(155, 23);
-            this.txtLastName.TabIndex = 0;
+            this.txtLastName.TabIndex = 2;
             // 
             // label2
             // 
@@ -87,8 +87,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.txtFirstName);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmNewAddAuthor";
-            this.Text = "frmNewAddAuthor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Yazar Ekleme Sayfası";
             this.ResumeLayout(false);
             this.PerformLayout();
 

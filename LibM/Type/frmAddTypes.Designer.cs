@@ -38,14 +38,14 @@
             this.txtBookTypes.Location = new System.Drawing.Point(79, 28);
             this.txtBookTypes.Name = "txtBookTypes";
             this.txtBookTypes.Size = new System.Drawing.Size(174, 23);
-            this.txtBookTypes.TabIndex = 0;
+            this.txtBookTypes.TabIndex = 1;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(178, 66);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
+            this.button1.TabIndex = 2;
             this.button1.Text = "Kaydet";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -63,12 +63,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(280, 135);
+            this.ClientSize = new System.Drawing.Size(280, 120);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtBookTypes);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmAddTypes";
-            this.Text = "frmAddTypes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Tür Ekleme Sayfası";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -43,10 +43,11 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(338, 244);
+            this.btnSave.Location = new System.Drawing.Point(238, 206);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(112, 34);
-            this.btnSave.TabIndex = 0;
+            this.btnSave.Size = new System.Drawing.Size(78, 31);
+            this.btnSave.TabIndex = 6;
             this.btnSave.Text = "Kaydet";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -54,89 +55,99 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(85, 52);
+            this.label1.Location = new System.Drawing.Point(69, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 25);
+            this.label1.Size = new System.Drawing.Size(32, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "İsim:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 89);
+            this.label2.Location = new System.Drawing.Point(50, 63);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 25);
+            this.label2.Size = new System.Drawing.Size(51, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Soyisim:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(57, 128);
+            this.label3.Location = new System.Drawing.Point(49, 100);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 25);
+            this.label3.Size = new System.Drawing.Size(52, 15);
             this.label3.TabIndex = 3;
             this.label3.Text = "Cinsiyet:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 164);
+            this.label4.Location = new System.Drawing.Point(20, 140);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 25);
+            this.label4.Size = new System.Drawing.Size(81, 15);
             this.label4.TabIndex = 4;
             this.label4.Text = "Doğum Tarihi:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(81, 199);
+            this.label5.Location = new System.Drawing.Point(65, 174);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 25);
+            this.label5.Size = new System.Drawing.Size(36, 15);
             this.label5.TabIndex = 5;
             this.label5.Text = "Sınıfı:";
             // 
             // txtFirstname
             // 
-            this.txtFirstname.Location = new System.Drawing.Point(150, 46);
+            this.txtFirstname.Location = new System.Drawing.Point(105, 23);
+            this.txtFirstname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFirstname.Name = "txtFirstname";
-            this.txtFirstname.Size = new System.Drawing.Size(300, 31);
-            this.txtFirstname.TabIndex = 6;
+            this.txtFirstname.Size = new System.Drawing.Size(211, 23);
+            this.txtFirstname.TabIndex = 1;
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(150, 83);
+            this.txtLastName.Location = new System.Drawing.Point(105, 60);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(300, 31);
-            this.txtLastName.TabIndex = 7;
+            this.txtLastName.Size = new System.Drawing.Size(211, 23);
+            this.txtLastName.TabIndex = 2;
             // 
             // cmbGender
             // 
             this.cmbGender.FormattingEnabled = true;
-            this.cmbGender.Location = new System.Drawing.Point(150, 120);
+            this.cmbGender.Location = new System.Drawing.Point(105, 97);
+            this.cmbGender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbGender.Name = "cmbGender";
-            this.cmbGender.Size = new System.Drawing.Size(300, 33);
-            this.cmbGender.TabIndex = 8;
+            this.cmbGender.Size = new System.Drawing.Size(211, 23);
+            this.cmbGender.TabIndex = 3;
             // 
             // dtpBirthdate
             // 
-            this.dtpBirthdate.Location = new System.Drawing.Point(150, 159);
+            this.dtpBirthdate.Location = new System.Drawing.Point(105, 134);
+            this.dtpBirthdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpBirthdate.Name = "dtpBirthdate";
-            this.dtpBirthdate.Size = new System.Drawing.Size(300, 31);
-            this.dtpBirthdate.TabIndex = 9;
+            this.dtpBirthdate.Size = new System.Drawing.Size(211, 23);
+            this.dtpBirthdate.TabIndex = 4;
             // 
             // txtGrade
             // 
-            this.txtGrade.Location = new System.Drawing.Point(150, 196);
+            this.txtGrade.Location = new System.Drawing.Point(105, 171);
+            this.txtGrade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtGrade.Name = "txtGrade";
-            this.txtGrade.Size = new System.Drawing.Size(300, 31);
-            this.txtGrade.TabIndex = 10;
+            this.txtGrade.Size = new System.Drawing.Size(211, 23);
+            this.txtGrade.TabIndex = 5;
             // 
             // frmAddStudent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 308);
+            this.ClientSize = new System.Drawing.Size(344, 248);
             this.Controls.Add(this.txtGrade);
             this.Controls.Add(this.dtpBirthdate);
             this.Controls.Add(this.cmbGender);
@@ -148,11 +159,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSave);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmAddStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmAddStudent";
+            this.Text = "Öğrenci Ekleme Sayfası";
             this.Load += new System.EventHandler(this.frmAddStudent_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

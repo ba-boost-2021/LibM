@@ -43,7 +43,6 @@
             this.booksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.studentManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.employeeDatasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransactions)).BeginInit();
@@ -136,19 +135,13 @@
             // 
             // authorsToolStripMenuItem
             // 
-            
             this.authorsToolStripMenuItem.Name = "authorsToolStripMenuItem";
             this.authorsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.authorsToolStripMenuItem.Text = "Authors";
             this.authorsToolStripMenuItem.Click += new System.EventHandler(this.authorsToolStripMenuItem_Click);
             // 
-            // addAuthorsToolStripMenuItem
-            // 
-            
-            // 
             // typesToolStripMenuItem
             // 
-            
             this.typesToolStripMenuItem.Name = "typesToolStripMenuItem";
             this.typesToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.typesToolStripMenuItem.Text = "Types";
@@ -179,7 +172,7 @@
             // employeeDatasToolStripMenuItem
             // 
             this.employeeDatasToolStripMenuItem.Name = "employeeDatasToolStripMenuItem";
-            this.employeeDatasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.employeeDatasToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.employeeDatasToolStripMenuItem.Text = "Employee Datas";
             this.employeeDatasToolStripMenuItem.Click += new System.EventHandler(this.employeeDatasToolStripMenuItem_Click);
             // 
@@ -201,6 +194,7 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvTransactions);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;

@@ -53,9 +53,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dgvTypes);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmTypes";
-            this.Text = "frmTypes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Kitap Tipleri Sayfası";
             this.Load += new System.EventHandler(this.frmTypes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTypes)).EndInit();
             this.ResumeLayout(false);

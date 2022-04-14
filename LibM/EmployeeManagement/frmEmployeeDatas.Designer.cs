@@ -86,7 +86,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmEmployeeDatas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmEmployeeManagement";
+            this.Text = "Çalışan Yönetim Sayfası";
             this.Load += new System.EventHandler(this.frmEmployeeManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeeManagement)).EndInit();
             this.ResumeLayout(false);
